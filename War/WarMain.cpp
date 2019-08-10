@@ -175,6 +175,10 @@ int main()
 			int humansCard = humanPlayer.Flip(1);
 			int computersCard = computerPlayer.Flip(1);
 
+			if ((humansCard == -1) || (computersCard == -1) {
+				gameOver = true;
+			}
+			
 			// Check if game is over. If so, skip checking the flip.
 			if (gameOver == false)
 			{
